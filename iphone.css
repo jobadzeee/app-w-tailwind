@@ -1,0 +1,145 @@
+.mobile {
+  background-color: rgb(31, 31, 31);
+  width: 276px;
+  height: 574px;
+  border-radius: 45px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 2px 4px rgb(116, 116, 116);
+}
+
+.screen {
+  background: rgb(19, 112, 171);
+  background: linear-gradient(
+    142deg,
+    rgba(19, 112, 171, 1) 2%,
+    rgba(175, 175, 175, 1) 94%
+  );
+  width: 260px;
+  height: 558px;
+  border-radius: 40px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.notch {
+  width: 85px;
+  height: 25px;
+  background-color: rgb(31, 31, 31);
+  position: relative;
+  border-radius: 45px;
+  top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.camera {
+  width: 12px;
+  height: 12px;
+  background-color: #242756;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 8px;
+}
+
+.lense {
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #405886;
+  position: relative;
+  left: 2px;
+  bottom: 2px;
+}
+
+.main-logo {
+  padding: 20px 0px;
+}
+
+.mobile-inp {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-bottom: 1px solid white;
+  padding: 5px 2px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.input-box-iphone {
+  padding: 5px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+}
+
+.li-box {
+  width: 80%;
+  transition: 1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.li-box:hover {
+  width: 100%;
+}
+
+::-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.icon-mob {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.mob-txt-box {
+  padding: 20px 0;
+  max-width: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.mob-txt {
+  font-size: 12px;
+  color: #242756;
+}
+
+.create-acc {
+  padding: 15px 25px;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(227, 187, 41);
+  color: #242756;
+  transition: 0.3s all;
+  border: 2px solid #405886;
+}
+
+.create-acc:hover {
+  background-color: rgb(227, 157, 27);
+  color: #ffffff;
+}
+
+.create-acc:active {
+  background-color: rgb(232, 171, 96);
+  color: #405886;
+}
+
+input:focus {
+  outline: none;
+}

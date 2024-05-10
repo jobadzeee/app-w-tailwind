@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- styles-->
+    <link rel="stylesheet" href="style.css">
+    <!-- iphone 15 style -->
+    <link rel="stylesheet" href="./iphone.css">
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/aedd6d947c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header
+        class="flex items-center justify-between py-0 px-4 fixed bg-white z-50 w-full shadow shadow-black-500/40 hover:shadow-gray-500/40">
+        <div class="flex items-center">
+            <svg width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect y="0.0983887" width="64" height="65.9016" fill="url(#pattern0_758_158)" />
+                <defs>
+                    <pattern id="pattern0_758_158" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_758_158" transform="matrix(0.00514857 0 0 0.005 -0.0148566 0)" />
+                    </pattern>
+                    <image id="image0_758_158" width="200" height="200"
+                        xlink:href="data:image/png;base64,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" />
+                </defs>
+            </svg>
+            <a class="app-link" href="">Get APP</a>
+        </div>
+
+        <div class=" hidden md:flex md:items-center md:relative md:gap-11 ">
+            <a href="" class="header-link">Learn</a>
+            <a href="" class="header-link">BLOG</a>
+            <a href="" class="header-link">ABOUT US</a>
+            <button class="start">GET STARTED</button>
+        </div>
+        <i class="fa-solid fa-bars text-3xl	 md:hidden" style="color: #2cb5b4;"></i>
+    </header>
+
+    <section class="bg-cyan-100	h-screen">
+        <div class="absolute top-1/4 left-1-6">
+            <h2 class="blue-main-txt">Say goodbye <br>to idle money.</h2>
+            <span class="mini-txt">Earn 4% yield with DeFi-powered saving.</span>
+            <div class="w-9/12 flex items-center py-9 justify-between">
+                <button class="start">GET STARTED</button>
+                <a href="" class="available">Available on IOS</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-screen flex justify-center items-center text-center flex-col gap-11 px-4 ">
+        <h3 class="main-text-nd">
+            We make <br> money move.
+        </h3>
+        <button class="learn-more">
+            LEARN MORE
+        </button>
+
+        <div class="flex gap-1  flex-col sm:flex-row  sm:gap-20 ">
+            <div class="max-w-xs w-full flex items-center justify-center gap-2 flex-col h-98">
+                <img src="./photo-1516791478406-b08b576971fb.avif" width="300px" alt="">
+
+
+                <p class="txt-box min-h-28">
+                    Connect your bank account and start saving in under 5 minutes.
+                </p>
+
+            </div>
+
+            <div class="max-w-xs w-full flex items-center justify-center gap-2 flex-col h-98">
+                <img src="./photo-1516791478406-b08b576971fb.avif" width="300px" alt="">
+
+                <p class="txt-box min-h-28">
+                    4% APY through the power of decentralized finance.
+                </p>
+
+            </div>
+
+            <div class="max-w-xs w-full flex items-center justify-center gap-2 flex-col h-98">
+                <img src="./photo-1516791478406-b08b576971fb.avif" width="300px" alt="">
+
+                <p class="txt-box min-h-28">
+                    Over $5+ million earning interest safely thanks to best-in-class.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="grid grid-cols-2 md:grid-cols-3 h-screen justify-items-center items-center px-4">
+        <h2 class="col-blue col-span-full md:col-start-1">How it works?</h2>
+        <div class="col-start-1	flex flex-col items-center gap-11 py-20 self-center	">
+            <div class="flex flex-col justify-center max-w-xs w-full text-left gap-6">
+                <span class="number">01</span>
+                <span class="meaning">Deposit</span>
+                <span class="content">Link your bank account to add funds instantly.</span>
+            </div>
+            <div class="flex flex-col justify-center max-w-xs w-full text-left gap-6">
+                <span class="number">02</span>
+                <span class="meaning">Automate</span>
+                <span class="content">Collect spare change or schedule recurring deposits.</span>
+            </div>
+        </div>
+        <div class="xl:col-start-3	flex flex-col items-center gap-11 py-20 self-center  col-start-2">
+            <div class="flex flex-col justify-center max-w-xs w-full text-left gap-6">
+                <span class="number">03</span>
+                <span class="meaning">Earn Yield</span>
+                <span class="content">Generate fixed or variable interest in real time at rates up to 20x your
+                    bank.</span>
+            </div>
+            <div class="flex flex-col justify-center max-w-xs w-full text-left gap-6">
+                <span class="number">04</span>
+                <span class="meaning">Cash Out</span>
+                <span class="content">Move your savings in and out freely with no fees or fixed terms.</span>
+            </div>
+        </div>
+        <div class="hidden md:flex md:justify-center md:col-start-3 row-start-2 items-center xl:col-start-2 ">
+            <div class="mobile">
+                <div class="screen">
+                    <div class="notch">
+                        <div class="camera">
+                            <div class="lense"></div>
+                        </div>
+                    </div>
+                    <div class="main-logo">
+                        <img src="./images/logo-img.png" alt="">
+                    </div>
+                    <ul class="input-box-iphone">
+                        <li class="li-box">
+                            <i class="fa-brands fa-instagram icon-mob" style="color: #ffffff;">
+                            </i><input type="text" class="mobile-inp" placeholder="Instagram">
+                        </li>
+                        <li class="li-box">
+                            <i class="fa-regular fa-envelope icon-mob" style="color: #ffffff;"></i>
+                            <input type="email" class="mobile-inp" placeholder="Gmail">
+                        </li>
+                        <li class="li-box">
+                            <i class="fa-solid fa-lock icon-mob" style="color: #ffffff;"></i>
+                            <input type="password" class="mobile-inp" placeholder="Password">
+                        </li>
+                    </ul>
+                    <div class="mob-txt-box">
+                        <p class="mob-txt">By creating an account you agree to our Terms & Conditions and Privacy
+                            Policy.
+                        </p>
+                    </div>
+                    <button class="create-acc">CREATE ACCOUNT</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="start ml-32 col-span-full md:col-start-1">GET STARTED</button>
+    </section>
+    <footer class="pt-28">
+        <div class="bg-cyan-100 h-56 flex justify-center items-center flex-col gap-4">
+            <span class="meaning">As featured in...</span>
+            <div class="flex justify-between w-4/5 gap-6">
+                <img src="./images/Logo.png ">
+                <img src="./images/Logo.png ">
+                <img src="./images/Logo.png ">
+                <img src="./images/Logo.png ">
+            </div>
+    </footer>
+</body>
+
+</html>
