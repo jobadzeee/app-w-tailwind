@@ -48,12 +48,14 @@
     </header>
 
     <section class="bg-cyan-100	h-screen">
-        <div class="absolute top-1/4 left-1-6">
-            <h2 class="blue-main-txt">Say goodbye <br>to idle money.</h2>
-            <span class="mini-txt">Earn 4% yield with DeFi-powered saving.</span>
-            <div class="w-9/12 flex items-center py-9 justify-between">
-                <button class="start">GET STARTED</button>
-                <a href="" class="available">Available on IOS</a>
+        <div class="w-[500px]">
+            <div class="pt-[160px]">
+                <h2 class="blue-main-txt">Say goodbye <br>to idle money.</h2>
+                <span class="mini-txt">Earn 4% yield with DeFi-powered saving.</span>
+                <div class="w-9/12 flex items-center py-9 justify-between">
+                    <button class="start">GET STARTED</button>
+                    <a href="" class="available">Available on IOS</a>
+                </div>
             </div>
         </div>
     </section>
@@ -67,7 +69,7 @@
         </button>
 
         <div class="flex gap-1  flex-col sm:flex-row  sm:gap-20 ">
-            <div class="max-w-xs w-full flex items-center justify-center gap-2 flex-col h-98">
+            <div class="max-w-xs w-full flex items-center justify-center gap-2 flex-col">
                 <img src="./photo-1516791478406-b08b576971fb.avif" width="300px" alt="">
 
 
@@ -77,7 +79,7 @@
 
             </div>
 
-            <div class="max-w-xs w-full flex items-center justify-center gap-2 flex-col h-98">
+            <div class="max-w-xs w-full flex items-center justify-center gap-2 flex-col">
                 <img src="./photo-1516791478406-b08b576971fb.avif" width="300px" alt="">
 
                 <p class="txt-box min-h-28">
@@ -86,7 +88,7 @@
 
             </div>
 
-            <div class="max-w-xs w-full flex items-center justify-center gap-2 flex-col h-98">
+            <div class="max-w-xs w-full flex items-center justify-center gap-2 flex-col">
                 <img src="./photo-1516791478406-b08b576971fb.avif" width="300px" alt="">
 
                 <p class="txt-box min-h-28">
@@ -161,8 +163,10 @@
             </div>
         </div>
 
-        <button class="start ml-32 col-span-full md:col-start-1">GET STARTED</button>
+        <button onclick="change()" class="start ml-32 col-span-full md:col-start-1">GET STARTED</button>
     </section>
+
+    <p id="error" class="text-center"></p>
     <footer class="pt-28">
         <div class="bg-cyan-100 h-56 flex justify-center items-center flex-col gap-4">
             <span class="meaning">As featured in...</span>
@@ -173,6 +177,8 @@
                 <img src="./images/Logo.png ">
             </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

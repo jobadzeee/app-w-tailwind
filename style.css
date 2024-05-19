@@ -175,3 +175,8 @@
   gap: 20%;
   padding: 20% 0px;
 }
+
+#error {
+  color: red;
+  font-weight: 200;
+}
